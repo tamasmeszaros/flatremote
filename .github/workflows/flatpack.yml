@@ -12,7 +12,8 @@ jobs:
       options: --privileged
     steps:
     - uses: actions/checkout@v4
-      submodules: true
+      with:
+        submodules: true
     - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
       with:
         bundle: palette.flatpak
