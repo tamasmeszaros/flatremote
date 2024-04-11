@@ -4,7 +4,8 @@ project(flatremote)
 
 find_package(OpenGL REQUIRED)
 
-find_package(wxWidgets 3.0 REQUIRED COMPONENTS gl core base)
+set(wxWidgets_CONFIG_OPTIONS --toolkit=gtk3 )
+find_package(wxWidgets 3.1 REQUIRED COMPONENTS gl core base)
 include(${wxWidgets_USE_FILE})  
 
 add_executable(flatremote main.cpp)
