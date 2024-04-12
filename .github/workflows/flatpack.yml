@@ -44,7 +44,9 @@ jobs:
     steps:
       # Checkout a repository with Flatpak manifests
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+          with:
+            submodules: true
 
       # See "Multiple Architectures" below
       # - name: Setup QEMU
