@@ -45,7 +45,7 @@ jobs:
       # Checkout a repository with Flatpak manifests
       - name: Checkout
         uses: actions/checkout@v4
-          with:
+        with:
             submodules: true
 
       # See "Multiple Architectures" below
