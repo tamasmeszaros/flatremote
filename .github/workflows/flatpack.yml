@@ -16,6 +16,6 @@ jobs:
         submodules: true
     - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
       with:
-        bundle: palette.flatpak
+        bundle: Flatremote.flatpak
         manifest-path: org.flatpak.Flatremote.yml
         cache-key: flatpak-builder-${{ github.sha }}
