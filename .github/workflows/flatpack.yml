@@ -77,7 +77,7 @@ jobs:
           arch: ${{ matrix.arch }}
           gpg-sign: ${{ steps.gpg.outputs.fingerprint }}
           upload-bundles: true
-          upload-pages-artifact: true
+          upload-pages-artifact: ${{ matrix.arch == 'aarch64' }}
           # upload-pages-includes: |
           #   CNAME
           #   default.css
